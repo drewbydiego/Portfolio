@@ -440,7 +440,7 @@ text-transform: uppercase;
     width: 80vw;
   }
   .backgroundCover {
-    width: max(15%, 130px);
+    width: max(15%, 150px);
     height: auto;
     position: absolute;
   }
