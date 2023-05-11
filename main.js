@@ -6,9 +6,13 @@ let rotationAngle = 0;
 
 // Define a function to rotate the image
 function rotateImage() {
-  // Increment the rotation angle by 1 degree
-    rotationAngle += 0.050;
+    
 
+    if (window.innerWidth<=820) {
+      rotationAngle += 0.20;
+    }else{
+      rotationAngle += 0.050;
+    }
   // Apply the rotation transformation to the image using the CSS transform property
     image.style.transform = `rotate(${rotationAngle}deg)`;
 
@@ -17,7 +21,9 @@ function rotateImage() {
 }
 
 // Call the rotateImage function to start the rotation animation when the page loads
-window.addEventListener('load', rotateImage);
+window.addEventListener('load', ()=>{
+  rotateImage()
+});
 
 
 let menu = document.getElementById('menu');
@@ -41,3 +47,4 @@ function toggleMenu(){
     toggleClose.style.display = 'none'
   }
 }
+
