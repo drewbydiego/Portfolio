@@ -141,7 +141,6 @@ color: azure;
 
 .project-details-button a{
   text-decoration: none;
-  text-transform: uppercase;
   color: rgba(20, 20, 34);
 }
 .project-details-button:hover{
@@ -234,6 +233,7 @@ color: azure;
   background-color: rgba(20, 20, 34);
   width: 100vw;
   color: #fff;
+
 }
 .portfolio-headings{
   width: 100vw;
@@ -261,6 +261,7 @@ color: azure;
   color: #fff;
   background-color: #101e4b;
   margin: 1em;
+  text-align: center;
 }
 .card-img{
   width: 100%;
@@ -334,17 +335,19 @@ text-transform: uppercase;
   padding-top: 5rem;
 }
 .container-contact{
-  padding: 3em;
+  padding-bottom: 3em;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  align-items: center;
+
+
 }
 
 .container-contact img{
-  width: 750px;
-  height: 700px;
+  width: 500px;
+  height: auto;
   bottom: 0px;
+  margin: 0 auto;
 }
 
 .form{
@@ -388,6 +391,7 @@ text-transform: uppercase;
 }
 .footer-content h5{
   font-size: 1.5em;
+  text-align: center;
   color: rgba(20, 20, 34);
 }
 
@@ -425,8 +429,22 @@ text-transform: uppercase;
   height: auto;
 }
 
+
 }
 @media screen and (max-width: 1074px){
+.modal{
+  padding-top: 5%;
+}
+  .details{
+    flex-direction: column;
+    align-items: center;
+  }
+  .details p{
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: justify;
+  }
+
   .contact-img{
     display: none;
   }
@@ -439,7 +457,42 @@ text-transform: uppercase;
 }
 }
 
+.card span{
+  font-size: 1.5em;
+  position: relative;
+  box-shadow: none;
+  border-radius: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+
+  .details p{
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: justify;
+    font-size: 0.90em;
+  }
+  .modal-content img{
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 500px){
+
+  .details p{
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+  }
+  .modal-content img{
+    display: none;
+  }
+}
 @media screen and (max-width: 800px){
+
+
   .navbar{
     position: relative;
     background-color: transparent;
@@ -461,7 +514,7 @@ text-transform: uppercase;
     margin: 2em;
   }
 
-  .material-symbols-outlined{
+  .toggle-menu .material-symbols-outlined{
     font-size: 1.5em;
     margin-top: -.2em;
     cursor: pointer;
@@ -469,9 +522,7 @@ text-transform: uppercase;
     border-radius: 50%;
     box-shadow: 0 0 1px #00ffff,
                 0 0 3px #00ffff;
-
   }
-
 
   .about p{
     color:rgba(20, 20, 34);
@@ -552,5 +603,88 @@ text-transform: uppercase;
   }
   .backgroundCover{
     margin-bottom: 2.5em;
+  }
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: modalFadeIn 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.modal-content {
+  border-radius: 10px;
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #00ffff;
+  width: 80%;
+  height: auto;
+  background-color: rgba(20, 20, 34);
+  box-shadow: 0 0 3px #00ffff,
+              0 0 5px #00ffff,
+              0 0 8px #00ffff;
+  animation: contentFadeIn 0.3s ease-in-out;
+}
+.details{
+  display: flex;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.modal-content img{
+  width: 80%;
+  height: auto;
+  padding: 0 2rem;
+}
+.details p{
+  width: 100%;
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+.close {
+  color: azure;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #00ffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

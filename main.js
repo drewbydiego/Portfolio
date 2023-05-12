@@ -54,7 +54,6 @@ home.addEventListener('click', ()=>{
   about.classList.remove('active');
   Portfolio.classList.remove('active');
   Contact.classList.remove('active');
-
 });
 
 let about = document.getElementById('about-li');
@@ -79,4 +78,39 @@ Contact.addEventListener('click', ()=>{
   about.classList.remove('active');
   Contact.classList.add('active');
   Portfolio.classList.remove('active');
+});
+
+
+window.addEventListener("scroll", function() {
+  var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+
+  if(scrollY >512){
+    home.classList.remove('active');
+    about.classList.add('active');
+    Portfolio.classList.remove('active');
+    Contact.classList.remove('active');
+  }
+
+  if(scrollY == 0 && scrollY<512){
+    home.classList.add('active');
+    about.classList.remove('active');
+    Portfolio.classList.remove('active');
+    Contact.classList.remove('active');
+  }
+
+  if(scrollY >=1141){
+    home.classList.remove('active');
+    about.classList.remove('active');
+    Portfolio.classList.add('active');
+    Contact.classList.remove('active');
+  }
+  if(scrollY >2400){
+    home.classList.remove('active');
+    about.classList.remove('active');
+    Portfolio.classList.remove('active');
+    Contact.classList.add('active');
+  }
+
+
 });
