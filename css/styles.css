@@ -50,7 +50,7 @@ body {
 .menu{
   display: flex;
   width: 50%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .menu li{
@@ -264,8 +264,27 @@ color: azure;
 .card-img{
   width: 100%;
   height: 150px;
-  background-image: url(../img/2-original.png);
   background-size:cover ;
+}
+#card-img-project1{
+
+  background-image: url(../img/Portfolioimg/project1.png);
+}
+#card-img-project2{
+
+  background-image: url(../img/Portfolioimg/project2.png);
+}
+#card-img-project3{
+
+  background-image: url(../img/Portfolioimg/project3.png);
+}
+#card-img-project4{
+
+  background-image: url(../img/Portfolioimg/project4.png);
+}
+#card-img-project5{
+
+  background-image: url(../img/Portfolioimg/project5.png);
 }
 
 .card-tittle{
@@ -427,7 +446,7 @@ text-transform: uppercase;
   .menu{
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -445,6 +464,11 @@ text-transform: uppercase;
     font-size: 1.5em;
     margin-top: -.2em;
     cursor: pointer;
+    position: fixed;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #00ffff,
+                0 0 3px #00ffff;
+
   }
 
 
@@ -472,7 +496,7 @@ text-transform: uppercase;
   .info-content .social-network{
     display: flex;
     justify-content: space-evenly;
-    z-index: 30;
+    z-index: 10;
   }
   .download-cv{
     display: none;
@@ -503,7 +527,7 @@ text-transform: uppercase;
 .show-menu{
   transform: translateX(0%);
   transition: all .5s ease-in-out;
-  z-index: 40;
+  z-index: 70;
 }
 
 
