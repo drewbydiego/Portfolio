@@ -196,6 +196,7 @@ color: azure;
   padding: 3em;
 }
 
+
 .about-info h2{
   font-size: 2em;
   color: rgba(20, 20, 34);
@@ -472,6 +473,10 @@ text-transform: uppercase;
   }
 
 
+  .about p{
+    color:rgba(20, 20, 34);
+  }
+
   .main, .about{
     display: flex;
     flex-direction: column-reverse;
@@ -509,8 +514,11 @@ text-transform: uppercase;
   }
   .toggle-menu {
     font-size: 1.1em;
-    margin-top: -.2em;
+    margin-top: -.1em;
     display: block;
+  }
+  .toggle-menu, .brand h2{
+    margin-top: 0.5em;
   }
 
   .backgroundCover {
