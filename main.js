@@ -6,9 +6,9 @@ let rotationAngle = 0;
 
 // Define a function to rotate the image
 function rotateImage() {
-    
 
-    if (window.innerWidth<=820) {
+
+    if (window.innerWidth<=800) {
       rotationAngle += 0.20;
     }else{
       rotationAngle += 0.050;
@@ -48,3 +48,35 @@ function toggleMenu(){
   }
 }
 
+let home = document.getElementById('home-li');
+home.addEventListener('click', ()=>{
+  home.classList.add('active');
+  about.classList.remove('active');
+  Portfolio.classList.remove('active');
+  Contact.classList.remove('active');
+
+});
+
+let about = document.getElementById('about-li');
+about.addEventListener('click', ()=>{
+  home.classList.remove('active');
+  about.classList.add('active');
+  Portfolio.classList.remove('active');
+  Contact.classList.remove('active');
+
+
+});
+let Portfolio = document.getElementById('Portfolio-li');
+Portfolio.addEventListener('click', ()=>{
+  Portfolio.classList.add('active');
+  home.classList.remove('active');
+  about.classList.remove('active');
+  Contact.classList.remove('active');
+});
+let Contact = document.getElementById('Contact-li');
+Contact.addEventListener('click', ()=>{
+  home.classList.remove('active');
+  about.classList.remove('active');
+  Contact.classList.add('active');
+  Portfolio.classList.remove('active');
+});

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Opcional: Estilos de transición y animación */
+html, body {
+  transition: scroll-behavior 0.6s ease-in-out;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +29,13 @@ body {
 .navbar{
   display: flex;
   justify-content: space-between;
-  padding:2em;
+  padding: 1em 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: rgba(20, 20, 34);
 }
 
 .brand{
@@ -99,7 +114,12 @@ h1{
                0 0 8px #00ffff;
 }
 
-
+a{
+color: azure;
+}
+.footer a{
+  color: rgba(20, 20, 34);
+}
 .download-cv{
   padding: 10px 20px;
   background-color: aqua;
@@ -161,6 +181,7 @@ h1{
   grid-template-columns: repeat(10, 1fr);
   width: 100vw;
   align-items: center;
+  padding-top: 3rem;
   background-color: rgba(230, 222, 222, 0.301);
 }
 
@@ -221,6 +242,7 @@ h1{
 
 .portfolio-headings h2{
   font-size: 2.5em;
+  padding-top: 5rem;
 }
 
 .portfolio .container{
@@ -229,6 +251,7 @@ h1{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .card{
@@ -288,6 +311,7 @@ text-transform: uppercase;
 .contact-headings{
   width: 100vw;
   padding-left: 5em;
+  padding-top: 5rem;
 }
 .container-contact{
   padding: 3em;
@@ -370,10 +394,36 @@ text-transform: uppercase;
 #toggle-close{
   display: none;
 }
+@media screen and (min-width: 800px){
+  .main{padding-top: 5em;}
+  .backgroundCover{margin-top: 5em;}
+}
+@media screen and (min-width: 1074px){
+.backgroundCover{
+  margin-top: 6rem;
+  width: min(43%, 600px);
+  height: auto;
+}
 
+}
+@media screen and (max-width: 1074px){
+  .contact-img{
+    display: none;
+  }
+
+  .form{
+    width: 100%;
+  }
+.contact-form{
+  width: 90vw;
+}
+}
 
 @media screen and (max-width: 800px){
-
+  .navbar{
+    position: relative;
+    background-color: transparent;
+  }
   .menu{
     flex-direction: column;
     justify-content: center;
@@ -430,15 +480,15 @@ text-transform: uppercase;
   .contact-img{
     display: none;
   }
-
+  .form{
+    width: 80vw;
+  }
   .toggle-menu {
     font-size: 1.1em;
     margin-top: -.2em;
     display: block;
   }
-  .form{
-    width: 80vw;
-  }
+
   .backgroundCover {
     width: max(15%, 150px);
     height: auto;
