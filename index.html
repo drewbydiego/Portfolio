@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
   <div class="wrapper" id="home">
@@ -23,6 +25,8 @@
           <li><a href="#about" id="about-li">About </a></li>
           <li><a href="#Portfolio" id="Portfolio-li">Portafolio</a></li>
           <li><a href="#Contact" id="Contact-li">Contact</a></li>
+
+
         </ul>
         <div class="toggle-menu">
           <span class="material-symbols-outlined" id="toggle-open">
@@ -54,7 +58,7 @@
         <span class="info-content_subtitle">Frontend Developer</span>
         <h1>I'm <span>Diego</span> Flores</h1>
         <div class="social-network">
-          <i class="fa-brands fa-instagram"></i>
+          <!--i class="fa-brands fa-instagram"></i-->
           <a href="https://github.com/drewbydiego" target="_blank"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/hi-iamdiegoflores/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
@@ -68,14 +72,22 @@
   </div>
 
     <div class="about" id="about">
-      <img src="./img/about.png" alt="Diego Flores Image">
+      <!--img src="./img/about.png" alt="Diego Flores Image-->
+      <div class="about-info-skills" >
+        <div class="icons-container">
+          <span class="material-icons" id="cssIcon">css</span>
+          <span class="material-icons" id="htmlIcon">html</span>
+          <span class="material-icons" id="jsIcon">javascript</span>
+          <span class="material-icons" id="codeIcon">data_object</span>
+          <span id="cssReact">React</span>
+        </div>
+      </div>
     <div class="about-info">
       <h2 id="subtittle-about">About me</h2>
       <div class="divider neonEfect"></div>
       <p>Hello, I'm Diego, a highly motivated software developer and student. With a passion for problem-solving and a thirst for learning new skills, I thrive in the world of programming. As a frontend developer, I have honed my expertise in web design to create visually appealing and interactive user experiences.</p>
-      <p>Beyond coding, I have a range of hobbies that fuel my creativity and provide balance to my technical pursuits. When I'm not immersed in lines of code, you can often find me curled up with a good book, exploring the latest video game releases, or diving into captivating anime series.</p>
       <p>I have actively contributed to the development of web applications, collaborating with cross-functional teams to deliver high-quality and intuitive user interfaces. Through these experiences, I have developed a keen eye for detail, an ability to meet deadlines, and a strong problem-solving mindset.</p>
-      <button class="btn-more">Read more</button>
+      <!--button class="btn-more">Read more</button-->
     </div>
   </div>
       <!---PORTFOLIO SECTION-->
@@ -214,7 +226,7 @@
       <h2>Diego Flores</h2>
       <h5>Frontend Developer</h5>
       <div class="social-network">
-      <i class="fa-brands fa-instagram"></i>
+      <!--i class="fa-brands fa-instagram"></i-->
       <a href="https://github.com/drewbydiego" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/hi-iamdiegoflores/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
@@ -223,5 +235,6 @@
 
   <script src="./main.js"></script>
   <script src="./modal.js"></script>
+  
 </body>
 </html>

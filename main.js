@@ -48,12 +48,15 @@ function toggleMenu(){
   }
 }
 
+
+
 let home = document.getElementById('home-li');
 home.addEventListener('click', ()=>{
   home.classList.add('active');
   about.classList.remove('active');
   Portfolio.classList.remove('active');
   Contact.classList.remove('active');
+  toggleMenu();
 });
 
 let about = document.getElementById('about-li');
@@ -62,7 +65,7 @@ about.addEventListener('click', ()=>{
   about.classList.add('active');
   Portfolio.classList.remove('active');
   Contact.classList.remove('active');
-
+  toggleMenu();
 
 });
 let Portfolio = document.getElementById('Portfolio-li');
@@ -71,6 +74,7 @@ Portfolio.addEventListener('click', ()=>{
   home.classList.remove('active');
   about.classList.remove('active');
   Contact.classList.remove('active');
+  toggleMenu();
 });
 let Contact = document.getElementById('Contact-li');
 Contact.addEventListener('click', ()=>{
@@ -78,6 +82,7 @@ Contact.addEventListener('click', ()=>{
   about.classList.remove('active');
   Contact.classList.add('active');
   Portfolio.classList.remove('active');
+  toggleMenu();
 });
 
 
@@ -90,6 +95,12 @@ window.addEventListener("scroll", function() {
     about.classList.add('active');
     Portfolio.classList.remove('active');
     Contact.classList.remove('active');
+
+  }
+  if(scrollY >512){
+    var iconsContainer = document.querySelector('.icons-container');
+    iconsContainer.style.top = '0'; // Establecer la posición final para que los iconos estén visibles antes de la animación
+    iconsContainer.classList.add('animate-gravity');
   }
 
   if(scrollY == 0 && scrollY<512){
@@ -114,3 +125,9 @@ window.addEventListener("scroll", function() {
 
 
 });
+
+
+window.addEventListener('load', function() {
+
+});
+

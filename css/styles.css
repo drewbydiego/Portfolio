@@ -181,7 +181,73 @@ color: azure;
   width: 100vw;
   align-items: center;
   padding-top: 3rem;
-  background-color: rgba(230, 222, 222, 0.301);
+  /*background-color: azure;*/
+  background-color: rgba(20, 20, 34);
+}
+
+
+.about-info-skills {
+  height: 100vh;
+  width: auto;
+  grid-column: 1/5;
+  max-width: 100%;
+  overflow: hidden; /* Para ocultar los iconos que se salgan del div */
+  position: relative; /* Para posicionar los iconos relativos a este div */
+}
+
+.about-info-skills .icons-container {
+  position: absolute;
+  top: -200%; /* Posición inicial por defecto */
+  left: 50%;
+  transform: translateX(-50%);
+  animation: gravity 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gravity {
+  0% {
+    top: -200%; /* Posición inicial por defecto */
+  }
+  100% {
+    top: 0; /* Posición final en la parte más baja del div */
+  }
+}
+
+.about-info-skills span {
+  font-size: 10rem;
+}
+
+#jsIcon {
+  color: yellow;
+  text-shadow: 0 0 0.5px yellow,
+  0 0 7px yellow;
+}
+
+#htmlIcon {
+  color: orangered;
+  text-shadow: 0 0 0.5px orangered,
+               0 0 2px orangered,
+               0 0 6px orangered;
+}
+
+#cssIcon {
+  color: #00ffff;
+  text-shadow: 0 0 0.5px #00ffff,
+               0 0 2px #00ffff,
+               0 0 7px #00ffff;
+}
+
+#cssReact {
+  color: aqua;
+  text-shadow: 0 0 0.5px #00ffff,
+               0 0 3px #00ffff,
+               0 0 5px #00ffff;
+  font-weight: 600;
+  font-size: 8rem;
+}
+
+#codeIcon {
+  color: azure;
 }
 
 .about img{
@@ -199,6 +265,13 @@ color: azure;
 .about-info h2{
   font-size: 2em;
   color: rgba(20, 20, 34);
+  color: azure;
+}
+
+.about-info p{
+  color: azure;
+  font-size: large;
+  font-weight: 500;
 }
 
 .divider{
@@ -214,7 +287,7 @@ color: azure;
 .neonEfect{
   height: 4px;
   width: 60px;
-  background-color: rgba(20, 20, 34);
+/*  background-color: rgba(20, 20, 34);*/
   box-shadow: 0 0 3px #00ffff,
                0 0 8px #00ffff;
   margin-top: 5px;
@@ -223,7 +296,10 @@ color: azure;
 }
 .about p{
   margin-bottom: 1em;
+  text-align: justify;
 }
+
+
 .portfolio{
   background-color: rgba(20, 20, 34);
   width: 100vw;
@@ -253,6 +329,7 @@ color: azure;
   flex-wrap: wrap;
 
 }
+
 
 .card{
   width: 300px;
@@ -430,6 +507,19 @@ text-transform: uppercase;
 
 }
 @media screen and (max-width: 1074px){
+
+  .about-info-skills span {
+    font-size: 7rem;
+    padding-left: 2rem;
+  }
+
+  .icons-container{
+    padding-top: 5rem;
+  }
+  #cssReact {
+    font-size: 6rem;
+  }
+
 .modal{
   padding-top: 5%;
 }
@@ -495,6 +585,23 @@ text-transform: uppercase;
 @media screen and (max-width: 800px){
 
 
+  .icons-container{
+    padding-top: 0.1rem;
+  }
+
+  .about-info-skills {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .about-info-skills span {
+    font-size: 7.5rem;
+  }
+
+  #cssReact {
+    font-size: 6rem;
+  }
+
   .navbar{
     position: relative;
     background-color: transparent;
@@ -526,9 +633,7 @@ text-transform: uppercase;
                 0 0 3px #00ffff;
   }
 
-  .about p{
-    color:rgba(20, 20, 34);
-  }
+
 
   .main, .about{
     display: flex;
@@ -661,8 +766,12 @@ text-transform: uppercase;
   float: right;
   font-size: 28px;
   font-weight: bold;
-}
+  padding-top: 0;
 
+}
+#portfolio-view-modal-tittle{
+  padding-top: 2rem;
+}
 .close:hover,
 .close:focus {
   color: #00ffff;
