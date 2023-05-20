@@ -6,7 +6,7 @@
   <h1>My Portfolio</h1>
 
   <h2>About Me</h2>
-  <p>Hi! I'm Diego. I am passionate about [insert relevant field/industry]. Through my portfolio, I aim to showcase my skills, experience, and projects that highlight my abilities and expertise in [mention specific areas].</p>
+  <p>Hi! I'm Diego. I am passionate about tech industry. Through my portfolio, I aim to showcase my skills, experience, and projects that highlight my abilities and expertise in developening, programing as a full stack developer.</p>
 
   <h2>Portfolio Highlights</h2>
   <ul>
@@ -21,11 +21,11 @@
 
   <h2>Skills</h2>
   <ul>
-    <li>[Skill 1]</li>
-    <li>[Skill 2]</li>
-    <li>[Skill 3]</li>
-    <li>[Skill 4]</li>
-    <li>[Skill 5]</li>
+    <li>Hmlt</li>
+    <li>Css</li>
+    <li>Javascript</li>
+    <li>React</li>
+    <li>Node.js</li>
   </ul>
 
   <p>I am continuously expanding my skill set and exploring new technologies to stay up-to-date in this dynamic field.</p>
