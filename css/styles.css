@@ -220,14 +220,14 @@ color: azure;
 #jsIcon {
   color: yellow;
   text-shadow: 0 0 0.5px yellow,
-  0 0 7px yellow;
+  0 0 8px yellow;
 }
 
 #htmlIcon {
   color: orangered;
   text-shadow: 0 0 0.5px orangered,
                0 0 2px orangered,
-               0 0 6px orangered;
+               0 0 7px orangered;
 }
 
 #cssIcon {
@@ -241,7 +241,7 @@ color: azure;
   color: aqua;
   text-shadow: 0 0 0.5px #00ffff,
                0 0 3px #00ffff,
-               0 0 5px #00ffff;
+               0 0 7px #00ffff;
   font-weight: 600;
   font-size: 8rem;
 }
@@ -587,6 +587,10 @@ text-transform: uppercase;
 
   .icons-container{
     padding-top: 0.1rem;
+  }
+  .about-info-skills span {
+
+    padding-left: 0rem;
   }
 
   .about-info-skills {
