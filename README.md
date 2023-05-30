@@ -6,11 +6,11 @@
   <h1>My Portfolio</h1>
 
   <h2>About Me</h2>
-  <p>Hi! I'm Diego. I am passionate about [insert relevant field/industry]. Through my portfolio, I aim to showcase my skills, experience, and projects that highlight my abilities and expertise in [mention specific areas].</p>
+  <p>Hi! I'm Diego. I am passionate about tech industry. Through my portfolio, I aim to showcase my skills, experience, and projects that highlight my abilities and expertise in developening, programing as a full stack developer.</p>
 
   <h2>Portfolio Highlights</h2>
   <ul>
-    <li><strong>Project 1</strong>: [Brief description or key features of the project]</li>
+    <li><strong>Project 1</strong>: The CC Templates Tool is a project developed using HTML, CSS, and JavaScript. It serves as a valuable tool for call center agents, providing them with a user-friendly interface to enhance their efficiency and productivity</li>
     <li><strong>Project 2</strong>: [Brief description or key features of the project]</li>
     <li><strong>Project 3</strong>: [Brief description or key features of the project]</li>
     <li><strong>Project 4</strong>: [Brief description or key features of the project]</li>
@@ -21,21 +21,21 @@
 
   <h2>Skills</h2>
   <ul>
-    <li>[Skill 1]</li>
-    <li>[Skill 2]</li>
-    <li>[Skill 3]</li>
-    <li>[Skill 4]</li>
-    <li>[Skill 5]</li>
+    <li>Hmlt</li>
+    <li>Css</li>
+    <li>Javascript</li>
+    <li>React</li>
+    <li>Node.js</li>
   </ul>
 
   <p>I am continuously expanding my skill set and exploring new technologies to stay up-to-date in this dynamic field.</p>
 
   <h2>Contact Me</h2>
-  <p>I would love to hear from you! Feel free to reach out to me at [insert your preferred contact information] if you have any inquiries, collaboration opportunities, or would like to discuss a potential project.</p>
+  <p>I would love to hear from you! Feel free to reach out to me at diegoflo64411@gmail.com if you have any inquiries, collaboration opportunities, or would like to discuss a potential project.</p>
 
   <p>Thank you for visiting my portfolio!</p>
 
-  <p>[Diego Flores]</p>
+  <p>Diego Flores</p>
 </body>
 </html>
 
