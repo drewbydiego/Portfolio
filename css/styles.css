@@ -233,15 +233,15 @@ color: azure;
 #cssIcon {
   color: #00ffff;
   text-shadow: 0 0 0.5px #00ffff,
-               0 0 2px #00ffff,
+               0 0 3px #00ffff,
                0 0 7px #00ffff;
 }
 
 #cssReact {
   color: aqua;
   text-shadow: 0 0 0.5px #00ffff,
-               0 0 3px #00ffff,
-               0 0 7px #00ffff;
+               0 0 4px #00ffff,
+               0 0 6px #00ffff;
   font-weight: 600;
   font-size: 8rem;
 }
@@ -282,7 +282,15 @@ color: azure;
                0 0 8px #00ffff;
   margin-top: 5px;
   margin-bottom: 2em;
-
+}
+.modal-content .divider{
+  height: 4px;
+  width: 60px;
+  background-color: #00ffff;
+  box-shadow: 0 0 3px #00ffff,
+               0 0 8px #00ffff;
+  margin-top: 5px;
+  margin-bottom: 0em;
 }
 .neonEfect{
   height: 4px;
@@ -528,7 +536,7 @@ text-transform: uppercase;
     align-items: center;
   }
   .details p{
-    padding: 0.5rem 0;
+    padding: 0 0;
     width: 100%;
     text-align: justify;
   }
