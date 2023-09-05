@@ -1,79 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DIEGO FLORES</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-</head>
-<body>
-  <div class="wrapper" id="home">
-    <header>
-      <nav class="navbar">
-        <div class="brand">
-          <h2><span>D</span>F</h2>
-        </div>
-        <ul class="menu" id="menu">
-          <li><a href="#home" class="active" id="home-li">Home</a></li>
-          <li><a href="#about" id="about-li">About </a></li>
-          <li><a href="#Portfolio" id="Portfolio-li">Portafolio</a></li>
-          <li><a href="#Contact" id="Contact-li">Contact</a></li>
-
-
-        </ul>
-        <div class="toggle-menu">
-          <span class="material-symbols-outlined" id="toggle-open">
-            menu
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIEGO FLORES</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper" id="home">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2><span>D</span>F</h2>
+          </div>
+          <ul class="menu" id="menu">
+            <li><a href="#home" class="active" id="home-li">Home</a></li>
+            <li><a href="#about" id="about-li">About </a></li>
+            <li><a href="#Portfolio" id="Portfolio-li">Portafolio</a></li>
+            <li><a href="#Contact" id="Contact-li">Contact</a></li>
+          </ul>
+          <div class="toggle-menu">
+            <span class="material-symbols-outlined" id="toggle-open">
+              menu
             </span>
-            <span class="material-symbols-outlined fa-regular" id="toggle-close">
+            <span
+              class="material-symbols-outlined fa-regular"
+              id="toggle-close"
+            >
               close
-              </span>
+            </span>
           </div>
-      </nav>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2 id="portfolio-view-modal-tittle">PROJECT</h2>
-          <div class="divider"></div>
-          <div class="details">
-            <p id="portfolio-view-modal-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus corrupti sequi provident, quae, modi assumenda commodi quibusdam a repellendus atque quasi voluptatibus aperiam vel obcaecati iusto perspiciatis voluptatem enim doloremque?</p>
-            <img  id="portfolio-view-modal-img" alt="Diego Flores Portfolio project">
-            <a id="portfolio-view-modal-link">
-              <button class="project-details-button" id="portfolio-view-modal-button">Visit Website</button>
-            </a>
+        </nav>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="portfolio-view-modal-tittle">PROJECT</h2>
+            <div class="divider"></div>
+            <div class="details">
+              <p id="portfolio-view-modal-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+                corrupti sequi provident, quae, modi assumenda commodi quibusdam
+                a repellendus atque quasi voluptatibus aperiam vel obcaecati
+                iusto perspiciatis voluptatem enim doloremque?
+              </p>
+              <img
+                id="portfolio-view-modal-img"
+                alt="Diego Flores Portfolio project"
+              />
+              <a id="portfolio-view-modal-link">
+                <button
+                  class="project-details-button"
+                  id="portfolio-view-modal-button"
+                >
+                  Visit Website
+                </button>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      <img src="./img/backgroundCover.png" alt="" class="backgroundCover" id="rotate-image">
-      <div class="info-content">
-        <span class="info-content_subtitle">Frontend Developer</span>
-        <h1>I'm <span>Diego</span> Flores</h1>
-        <div class="social-network">
-          <!--i class="fa-brands fa-instagram"></i-->
-          <a href="https://github.com/drewbydiego" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/hi-iamdiegoflores/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </header>
+      <main class="main">
+        <img
+          src="./img/backgroundCover.png"
+          alt=""
+          class="backgroundCover"
+          id="rotate-image"
+        />
+        <div class="info-content">
+          <span class="info-content_subtitle">Frontend Developer</span>
+          <h1>I'm <span>Diego</span> Flores</h1>
+          <div class="social-network">
+            <!--i class="fa-brands fa-instagram"></i-->
+            <a href="https://github.com/drewbydiego" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/hi-iamdiegoflores/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="info-content_p">
+            I am Diego, a highly motivated software developer and student,
+            focused on solving problems and learning new skills!
+          </p>
+          <a download href="Resources/Diego's Resume.pdf">
+            <button class="download-cv" download="">Download CV</button>
+          </a>
         </div>
-        <p class="info-content_p">I am Diego, a highly motivated software developer and student, focused on solving problems and learning new skills!</p>
-        <a download href="Resources/Diego's Resume.pdf">
-          <button class="download-cv" download="">Download CV</button>
-        </a>
-      </div>
-      <img src="./img/DiegoProfilepic.png" alt="Diego Flores picture" class="mainIMG">
-    </main>
-  </div>
+        <img
+          src="./img/DiegoProfilepic.png"
+          alt="Diego Flores picture"
+          class="mainIMG"
+        />
+      </main>
+    </div>
 
     <div class="about" id="about">
       <!--img src="./img/about.png" alt="Diego Flores Image-->
-      <div class="about-info-skills" >
+      <div class="about-info-skills">
         <div class="icons-container">
           <span class="material-icons" id="cssIcon">css</span>
           <span class="material-icons" id="htmlIcon">html</span>
@@ -82,159 +132,197 @@
           <span id="cssReact">React</span>
         </div>
       </div>
-    <div class="about-info">
-      <h2 id="subtittle-about">About me</h2>
-      <div class="divider neonEfect"></div>
-      <p>Hello, I'm Diego, a highly motivated software developer and student. With a passion for problem-solving and a thirst for learning new skills, I thrive in the world of programming. As a frontend developer, I have honed my expertise in web design to create visually appealing and interactive user experiences.</p>
-      <p>I have actively contributed to the development of web applications, collaborating with cross-functional teams to deliver high-quality and intuitive user interfaces. Through these experiences, I have developed a keen eye for detail, an ability to meet deadlines, and a strong problem-solving mindset.</p>
-      <!--button class="btn-more">Read more</button-->
+      <div class="about-info">
+        <h2 id="subtittle-about">About me</h2>
+        <div class="divider neonEfect"></div>
+        <p>
+          Hello, I'm Diego, a highly motivated software developer and student.
+          With a passion for problem-solving and a thirst for learning new
+          skills, I thrive in the world of programming. As a frontend developer,
+          I have honed my expertise in web design to create visually appealing
+          and interactive user experiences.
+        </p>
+        <p>
+          I have actively contributed to the development of web applications,
+          collaborating with cross-functional teams to deliver high-quality and
+          intuitive user interfaces. Through these experiences, I have developed
+          a keen eye for detail, an ability to meet deadlines, and a strong
+          problem-solving mindset.
+        </p>
+        <!--button class="btn-more">Read more</button-->
+      </div>
     </div>
-  </div>
-      <!---PORTFOLIO SECTION-->
-  <div class="portfolio" id="Portfolio">
-    <div class="portfolio-headings">
-      <h2 id="subtittle-portfolio">My Portfolio</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="container">
-      <div class="card">
-        <div class="card-img" id="card-img-project1">
-        </div>
-        <div class="card-tittle">
-          <h2>CC Templates tool</h2>
-        </div>
-        <div class="card_project-links">
-          <a href="https://github.com/drewbydiego/TemplateTool" target="_blank" class="card-Link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <span class="material-symbols-outlined" id="p1">
-            info
-            </span>
-
-        </div>
-        <div class="projects-details-content">
-            <a href="https://drewbydiego.github.io/TemplateTool/" target="_blank">
+    <!---PORTFOLIO SECTION-->
+    <div class="portfolio" id="Portfolio">
+      <div class="portfolio-headings">
+        <h2 id="subtittle-portfolio">My Portfolio</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-img" id="card-img-project1"></div>
+          <div class="card-tittle">
+            <h2>CC Templates tool</h2>
+          </div>
+          <div class="card_project-links">
+            <a
+              href="https://github.com/drewbydiego/TemplateTool"
+              target="_blank"
+              class="card-Link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <span class="material-symbols-outlined" id="p1"> info </span>
+          </div>
+          <div class="projects-details-content">
+            <a
+              href="https://drewbydiego.github.io/TemplateTool/"
+              target="_blank"
+            >
               <button class="project-details-button">Visit Website</button>
             </a>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-img" id="card-img-project2"></div>
+          <div class="card-tittle">
+            <h2>Voice recognition</h2>
+          </div>
+          <div class="card_project-links">
+            <a
+              href="https://github.com/drewbydiego/ReconocimientoDeVoz"
+              target="_blank"
+              class="card-Link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <span class="material-symbols-outlined" id="p2"> info </span>
+          </div>
+          <div class="projects-details-content">
+            <a
+              href="https://drewbydiego.github.io/ReconocimientoDeVoz/"
+              target="_blank"
+            >
+              <button class="project-details-button">Visit Website</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" id="card-img-project3"></div>
+          <div class="card-tittle">
+            <h2>Contact list</h2>
+          </div>
+          <div class="card_project-links">
+            <a
+              href="https://github.com/drewbydiego/AgendaContactos"
+              target="_blank"
+              class="card-Link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <span class="material-symbols-outlined" id="p3"> info </span>
+          </div>
+          <div class="projects-details-content">
+            <a
+              href="https://drewbydiego.github.io/AgendaContactos/"
+              target="_blank"
+            >
+              <button class="project-details-button">Visit Website</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" id="card-img-project4"></div>
+          <div class="card-tittle">
+            <h2>Pokedex</h2>
+          </div>
+          <div class="card_project-links">
+            <a
+              href="https://github.com/drewbydiego/Proyecto-4-Pokedex"
+              target="_blank"
+              class="card-Link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <span class="material-symbols-outlined" id="p4"> info </span>
+          </div>
+          <div class="projects-details-content">
+            <a
+              href="https://drewbydiego.github.io/Proyecto-4-Pokedex/"
+              target="_blank"
+            >
+              <button class="project-details-button">Visit Website</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" id="card-img-project5"></div>
+          <div class="card-tittle">
+            <h2>Lenguage Translator</h2>
+          </div>
+          <div class="card_project-links">
+            <a
+              href="https://github.com/drewbydiego/TranslateAPI"
+              target="_blank"
+              class="card-Link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <span class="material-symbols-outlined" id="p5"> info </span>
+          </div>
+          <div class="projects-details-content">
+            <a
+              href="https://drewbydiego.github.io/TranslateAPI/"
+              target="_blank"
+            >
+              <button class="project-details-button">Visit Website</button>
+            </a>
+          </div>
+        </div>
+        <!---CONTACT SECTION-->
       </div>
-      <div class="card">
-        <div class="card-img" id="card-img-project2">
-        </div>
-        <div class="card-tittle">
-          <h2>Voice recognition</h2>
-        </div>
-        <div class="card_project-links">
-          <a href="https://github.com/drewbydiego/ReconocimientoDeVoz" target="_blank" class="card-Link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <span class="material-symbols-outlined" id="p2">
-            info
-            </span>
-        </div>
-        <div class="projects-details-content">
-          <a href="https://drewbydiego.github.io/ReconocimientoDeVoz/" target="_blank">
-            <button class="project-details-button">Visit Website</button>
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img" id="card-img-project3">
-        </div>
-        <div class="card-tittle">
-          <h2>Contact list</h2>
-        </div>
-        <div class="card_project-links">
-          <a href="https://github.com/drewbydiego/AgendaContactos" target="_blank" class="card-Link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <span class="material-symbols-outlined" id="p3">
-            info
-            </span>
-        </div>
-        <div class="projects-details-content">
-          <a href="https://drewbydiego.github.io/AgendaContactos/" target="_blank">
-            <button class="project-details-button">Visit Website</button>
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img" id="card-img-project4">
-        </div>
-        <div class="card-tittle">
-          <h2>Simple Clock</h2>
-        </div>
-        <div class="card_project-links">
-          <a href="https://github.com/drewbydiego/RELOJ" target="_blank" class="card-Link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <span class="material-symbols-outlined" id="p4">
-            info
-            </span>
-        </div>
-        <div class="projects-details-content">
-          <a href="https://drewbydiego.github.io/RELOJ/" target="_blank">
-            <button class="project-details-button">Visit Website</button>
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img" id="card-img-project5">
-        </div>
-        <div class="card-tittle">
-          <h2>Lenguage Translator</h2>
-        </div>
-        <div class="card_project-links">
-          <a href="https://github.com/drewbydiego/TranslateAPI" target="_blank" class="card-Link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <span class="material-symbols-outlined" id="p5">
-            info
-            </span>
-        </div>
-        <div class="projects-details-content">
-          <a href="https://drewbydiego.github.io/TranslateAPI/" target="_blank">
-            <button class="project-details-button">Visit Website</button>
-          </a>
-        </div>
-      </div>
-      <!---CONTACT SECTION-->
     </div>
-  </div>
 
-  <div class="contact-section" id="Contact">
-    <div class="contact-headings">
-      <h2 id="subtittle-contact">Keep in touch</h2>
-      <div class="divider"></div>
+    <div class="contact-section" id="Contact">
+      <div class="contact-headings">
+        <h2 id="subtittle-contact">Keep in touch</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container-contact">
+        <img src="img/DiegoContact.png" alt="" class="contact-img" />
+        <div class="contact-form">
+          <h4>Send me a message</h4>
+          <form class="form" netlify>
+            <input type="text" placeholder="Name" name="name" />
+            <input type="email" placeholder="email" name="email" />
+            <textarea
+              placeholder="Place your message here..."
+              name="message"
+            ></textarea>
+            <button class="btn-submit">Send message</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="container-contact">
-      <!--img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png" alt="" class="contact-img"-->
-      <img src="img/DiegoContact.png" alt="" class="contact-img">
-      <div class="contact-form">
-      <h4>Send me a message</h4>
-      <form class="form" netlify>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="email" name="email">
-        <textarea placeholder="Place your message here..."></textarea>
-        <button class="btn-submit">Send message</button>
-      </form>
-    </div>
-  </div>
-  </div>
-  <footer class="footer">
-    <div class="footer-content">
-      <h2>Diego Flores</h2>
-      <h5>Frontend Developer</h5>
-      <div class="social-network">
-      <!--i class="fa-brands fa-instagram"></i-->
-      <a href="https://github.com/drewbydiego" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/hi-iamdiegoflores/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Diego Flores</h2>
+        <h5>Frontend Developer</h5>
+        <div class="social-network">
+          <!--i class="fa-brands fa-instagram"></i-->
+          <a href="https://github.com/drewbydiego" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hi-iamdiegoflores/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
 
-  <script src="./main.js"></script>
-  <script src="./modal.js"></script>
-  
-</body>
+    <script src="./main.js"></script>
+    <script src="./modal.js"></script>
+  </body>
 </html>
